@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interação com formulários</title>
+  </head>
+  <body>
+    <header>
+      <h1>Apresente-se</h1>
+    </header>
+    <section>
+      <form action="cad.php" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="idnome" />
+
+        <label for="telemóvel">Número:</label>
+        <input type="tel" name="telemovel" id="idTelemovel" />
+
+        <label for="horasSemanais">Horas Semanais:</label>
+        <input type="number" name="horasSemanais" id="idHorasSemanais" />
+
+        <label for="diasSemana">Dias Semanais:</label>
+        <input type="number" name="diasSemanais" id="idDiasSemanais" />
+
+        <label for="precoHora">Preço por Hora:</label>
+        <input type="text" name="precoHora" id="idPrecoHora" />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>

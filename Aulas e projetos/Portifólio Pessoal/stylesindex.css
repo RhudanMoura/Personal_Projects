@@ -1,0 +1,131 @@
+body {
+  background-color: rgb(213, 237, 253);
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  border: 0px;
+  height: 3px;
+  background-color: rgb(0, 47, 255);
+}
+
+.img1 {
+  width: 100%;
+  border-radius: 5px;
+}
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.img2 {
+  width: 80%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.front {
+  text-align: center;
+}
+
+.about-me {
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.144);
+}
+.img-estudando {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.services {
+  text-align: center;
+}
+.clients {
+  text-align: center;
+}
+.clientsimg {
+  width: 50%;
+  height: 50%;
+}
+.contact-me {
+  width: 100%;
+  text-align: center;
+}
+
+.footercard {
+  width: 100%;
+}
+
+.textfooter {
+  text-decoration: none;
+  color: inherit;
+  color: black;
+}
+.footer1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer1,
+i {
+  color: rgb(255, 255, 255);
+}
+.footer {
+  background-color: rgb(30, 120, 255);
+}
+i:hover {
+  color: rgb(23, 0, 155);
+  transition: 1s;
+}
+
+.d-block {
+  border-radius: 10px;
+  height: 600px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+}
+
+.service-details {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #cff250;
+  border-radius: 4px;
+  background-color: #212226;
+}
+.service-details h3 {
+  color: #cff250;
+  margin-bottom: 1rem;
+}
+.service-details p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.admContainerTop,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px;
+}
+
+.admContainerMid,
+#formColumn {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#btnForm {
+  font-size: 20px;
+  background-color: rgb(30, 120, 255);
+}

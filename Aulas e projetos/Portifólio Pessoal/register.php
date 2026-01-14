@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesindex.css?v=1" />
+    <title>Portfólio</title>
+    <meta name="description"
+        content="Portifólio do Rhudan Moura. Desenvolvedor Front-end, back-end e UI-UX-Design. Crio sites responsivos e atrativos para pequenas e grandes empresas." />
+    <meta name="keywords"
+        content="Rhudan Moura, Desenvolvedor, Front-end, Back-end, UI-UX-Design, Portifólio, Responsivo, Pequenas empresas, Grandes empresas." />
+    <meta name="Author" content="Rhudan Moura" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <div class="position-absolute start-50 translate-middle-x text-center text-white d-none d-lg-block">
+                <h4 class="mb-0">RHUDAN MOURA</h4>
+                <strong class="text-light">Portfólio</strong>
+            </div>
+
+            <!-- Botões à direita -->
+            <div class="d-flex align-items-start">
+                <?php if(isset($_SESSION['user_id'])): ?>
+                <a href="profile.php" class="btn btn-primary text-white me-2">Perfil</a>
+                <a href="#" class="btn btn-primary text-white" onclick="confirmLogout(event)">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+                <?php else: ?>
+                <a href="login.php" class="login btn btn-primary text-white me-2">Login</a>
+                <a href="register.php" class="register btn btn-primary text-white me-2">Register</a>
+                <a href="admin.php" class="adminBtn btn btn-primary text-white">Admin</a>
+                <?php endif; ?>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Aboutme.html">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Trabalhos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="formulario.html">Simulação</a>
+                                </li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="contactme.html">Contactos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Registo de Utilizador</h3>
+                        <form action="process_register.php" method="POST" enctype="multipart/form-data">
+
+                            <!-- Nome de Utilizador -->
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Nome de Utilizador</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                                <div class="invalid-feedback">O nome de utilizador deve ter pelo menos 3 caracteres.
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">Digite um email válido.</div>
+                            </div>
+
+                            <!-- Senha -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <div class="invalid-feedback">A senha deve ter pelo menos 6 caracteres.</div>
+                            </div>
+
+                            <!-- Confirmar Senha -->
+                            <div class="mb-3">
+                                <label for="confirm_password" class="form-label">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="confirm_password"
+                                    name="confirm_password" required>
+                                <div class="invalid-feedback">As senhas não coincidem.</div>
+                            </div>
+
+                            <!-- Tipo de Utilizador -->
+                            <div class="mb-3">
+                                <label for="user_type" class="form-label">Tipo de Utilizador</label>
+                                <select class="form-select" id="user_type" name="user_type" required>
+                                    <option value="">-- Selecione --</option>
+                                    <option value="user">Utilizador</option>
+                                    <option value="admin">Administrador</option>
+                                </select>
+                                <div class="invalid-feedback">Selecione o tipo de utilizador.</div>
+                            </div>
+
+                            <!-- Foto de Perfil -->
+                            <div class="mb-3">
+                                <label for="profile_pic" class="form-label">Foto de Perfil</label>
+                                <input class="form-control" type="file" id="profile_pic" name="profile_pic"
+                                    accept="image/*" required>
+                                <div class="invalid-feedback">Selecione uma foto de perfil.</div>
+                            </div>
+
+                            <!-- Botão de Submissão -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Registar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-black py-3">
+        <div class="container text-center">
+            <p>
+                &copy; Rhudan Moura 2025 | Web Developer |
+                <a href="politica-privacidade.html" class="textfooter">Política de Privacidade</a>
+            </p>
+            <div class="footer1">
+                <div class="footerlinks">
+                    <a href="mailto:seuemail@dominio.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footerlinks">
+                    <a href="https://facebook.com/seuperfil" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="footerlinks">
+                    <a href="https://instagram.com/seuperfil" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footerlinks">
+                    <a href="tel:+123456789" title="Telefone">
+                        <i class="fas fa-phone" id="phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="validacao.js"></script>
+
+</body>
+
+</html>

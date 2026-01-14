@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactme.css" />
+    <title>Contact-me</title>
+    <meta
+      name="description"
+      content="Site profissional do Ed Sheeran. Ed
+    Sheeran é um cantor, compositor e produtor britânico.
+    Ao longo de sua carreira, ele alcançou enorme sucesso global com álbuns como
+    X (multiply), ÷ (divide), e seus singles, especialmente Shape of You. Ed Sheeran também fez parte de turnês
+    de artistas como Taylor Swift e One Direction. Em 2024, ele foi
+    reconhecido como uma das maiores estrelas pop da Billboard."
+    />
+    <meta
+      name="keywords"
+      content="Ed Sheeran,Artista, Musica, Tour, Billboard, Prêmiações, Cantor."
+    />
+    <meta name="Author" content="Rhudan Moura" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Link do mapa Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!--Link do mapa Leaflet JS-->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar bg-body-tertiary fixed-top"
+      style="background-image: url(Imagens/albumX.jpg)"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fs-2"
+          href="file:///C:/Users/Acer/Documents/Estudos/Aula%201%20MasterD/Projeto%20de%20site/indexpag.html"
+          >Ed Sheeran</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          style="background-image: url(Imagens/albumX.jpg)"
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand fs-2"
+              href="file:///C:/Users/Acer/Documents/Estudos/Aula%201%20MasterD/Projeto%20de%20site/indexpag.html"
+              >Ed Sheeran</a
+            >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item fs-2">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="file:///C:/Users/Acer/Documents/Estudos/Aula%201%20MasterD/Projeto%20de%20site/indexpag.html"
+                  >Sobre</a
+                >
+              </li>
+              <li class="nav-item fs-2">
+                <a
+                  class="nav-link"
+                  href="file:///C:/Users/Acer/Documents/Estudos/Aula%201%20MasterD/Projeto%20de%20site/indexpag.html"
+                  >Musicas</a
+                >
+              </li>
+              <li class="nav-item fs-2">
+                <a
+                  class="nav-link"
+                  href="file:///C:/Users/Acer/Documents/Estudos/Aula%201%20MasterD/Projeto%20de%20site/indexpag.html"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Tour
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <form class="container mt-5 py-5">
+      <h3>Entre em contacto comigo</h3>
+      <hr />
+      <div class="row">
+        <div class="mb-3 col-sm-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label for="apelido" class="form-label">Apelido</label>
+          <input type="text" class="form-control" id="apelido" required />
+        </div>
+        <div class="mb-3 col-sm-12">
+          <label for="email" class="form-label">Endereço de e-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label for="dataNascimento" class="form-label"
+            >Data de nascimento</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="dataNascimento"
+            required
+          />
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="mensagem"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary mb-3"
+        onclick="validarFormulario()"
+      >
+        Enviar
+      </button>
+      <div id="mensagemResposta"></div>
+    </form>
+    <!--Div do mapa-->
+    <div class="maparea">
+    <div id="mapid"></div>
+    </div>
+
+    <footer
+      class="footer text-black"
+      style="background-image: url(Imagens/albumX.jpg)"
+    >
+      <div class="container text-center">
+        <p>
+          &copy; Rhudan Moura 2025 | Web Developer |
+          <a href="politica-privacidade.html" class="textfooter"
+            >Política de Privacidade</a
+          >
+        </p>
+        <div class="footer1">
+          <div class="footerlinks">
+            <a
+              href="https://www.facebook.com/EdSheeranMusic/"
+              target="_blank"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a
+              href="https://www.instagram.com/teddysphotos/"
+              target="_blank"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a
+              href="https://www.youtube.com/user/EdSheeran"
+              target="_blank"
+              title="youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a
+              href="https://open.spotify.com/intl-pt/artist/6eUKZXaKkcviH0Ku9w2n3V"
+              target="_blank"
+              title="Spotify"
+            >
+              <i class="fab fa-spotify"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="contactme.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>

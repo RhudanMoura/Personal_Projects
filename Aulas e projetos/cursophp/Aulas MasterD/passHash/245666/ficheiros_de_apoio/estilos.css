@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+body {
+    background: url(bokeh.jpg) no-repeat center fixed;
+}
+
+h2 {
+    font-family: 'Dosis', arial;
+    text-align: center;
+}
+
+p,
+a {
+    text-align: center;
+    color: white;
+}
+
+.caixa0 {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    padding: 20px 0px 0px 0px;
+    width: auto;
+    height: 50px;
+}
+
+.caixa1 {
+    font-family: 'Dosis', arial;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 25px;
+    padding-bottom: 50px;
+    width: 500px;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 0px solid #000000;
+    color: #c0c5ce;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+.botao {
+    font-size: 18px;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+    background: #7F8C8D;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+table {
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}

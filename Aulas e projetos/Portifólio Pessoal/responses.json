@@ -1,0 +1,15 @@
+{
+    "errors": {
+        "username_short": "O nome de utilizador deve ter pelo menos 3 caracteres.",
+        "email_invalid": "Email inválido.",
+        "password_short": "A senha deve ter pelo menos 6 caracteres.",
+        "password_mismatch": "As senhas não coincidem.",
+        "no_profile_pic": "Por favor, selecione uma foto de perfil.",
+        "user_exists": "Nome de utilizador ou email já existem.",
+        "insert_error": "Erro ao registrar usuário.",
+        "user_type_required": "Por favor, selecione um tipo de utilizador."
+    },
+    "success": {
+        "register_success": "Usuário registrado com sucesso!"
+    }
+}

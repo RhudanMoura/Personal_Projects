@@ -1,0 +1,148 @@
+/* ===== Fontes Personalizadas ===== */
+@font-face {
+  font-family: "logofont";
+  src: url("Fontes/JMH Typewriter-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "navbarfont";
+  src: url("Fontes/La Machine Company.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "textabout";
+  src: url("Fontes/OldNewspaperTypes.ttf") format("truetype");
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+  font-family: "logofont";
+}
+
+.adminLink a {
+  text-decoration: none;
+  padding-right: 2rem;
+  color: #fff;
+  transition: 1.5s;
+}
+
+.nav-link {
+  font-family: "navbarfont";
+}
+
+/* ===== Carrossel ===== */
+.carousel-inner {
+  padding: 3rem 0;
+}
+
+/* ===== Loja Virtual ===== */
+#storeVirtual {
+  background-color: white;
+  border-radius: 10px;
+  padding: 3rem;
+}
+
+#storeVirtual h1,
+#storeVirtual h2 {
+  font-family: "navbarfont";
+  color: #333;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Lightbox ===== */
+#lightbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+#lightbox-image {
+  max-width: 50vw;
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.lightbox-content {
+  background: white;
+  padding: 20px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* ===== Sobre ===== */
+.about {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: "textabout";
+}
+
+/* ===== Álbum / Galeria ===== */
+.text-album {
+  text-align: center;
+  color: aliceblue;
+  font-size: 3rem;
+  font-family: "logofont";
+  padding-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  padding: 15px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ===== Rodapé ===== */
+.footer {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer1 i {
+  color: rgba(255, 253, 253, 0.644);
+}
+
+.textfooter {
+  text-decoration: none;
+  color: black;
+}
+
+i:hover {
+  color: rgb(16, 255, 16);
+  transition: color 1s;
+}

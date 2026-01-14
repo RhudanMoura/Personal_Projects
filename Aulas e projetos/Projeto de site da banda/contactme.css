@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "logofont";
+  src: url("Fontes/JMH\ Typewriter-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "navbarfont";
+  src: url("Fontes/La\ Machine\ Company.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "textabout";
+  src: url("Fontes/OldNewspaperTypes.ttf") format("truetype");
+}
+
+.body {
+  background-color: rgb(213, 237, 253);
+}
+
+hr {
+  border: 0px;
+  height: 3px;
+  background-color: rgb(0, 47, 255);
+}
+
+.nav-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+}
+.nav-content {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  gap: 80px;
+  font-size: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: "navbarfont";
+}
+
+.navbar-brand {
+  font-family: "logofont";
+}
+
+.footercard {
+  width: 100%;
+}
+
+.textfooter {
+  text-decoration: none;
+  color: inherit;
+  color: black;
+}
+.footer1 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer1,
+i {
+  color: rgb(141, 141, 141);
+  padding-bottom: 10px;
+}
+.footer {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+}
+i:hover {
+  color: rgb(23, 0, 155);
+  transition: 1s;
+}
+
+.maparea {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#mapid {
+  height: 500px;
+  width: 50%;
+}

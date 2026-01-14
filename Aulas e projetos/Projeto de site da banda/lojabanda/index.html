@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Loja da Banda Musical</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Loja Online</h1>
+    </header>
+
+    <main>
+      <section id="filter-section">
+        <h2>Filtrar por Categorias</h2>
+        <select id="category-filter">
+          <option value="">Escolher Categoria</option>
+        </select>
+      </section>
+
+      <section id="product-list">
+        <!-- Produtos serão carregados aqui -->
+      </section>
+
+      <div id="order-form">
+        <h2>Calcular Valor Total</h2>
+        <form id="calc-form">
+          <label for="product">Escolha um produto:</label>
+          <select id="product" name="product"></select>
+
+          <label for="quantity">Quantidade:</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            value="1"
+          />
+
+          <button type="button" id="calculate">Calcular Valor</button>
+        </form>
+
+        <div id="total-value"></div>
+      </div>
+    </main>
+
+    <div id="lightbox" style="display: none">
+      <div class="lightbox-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="lightbox-title"></h2>
+        <img id="lightbox-image" src="albumX.jpg" alt="" />
+        <p id="lightbox-description"></p>
+        <p id="lightbox-price"></p>
+      </div>
+    </div>
+
+    <script src="scripts.js" src="albumX.jpg"></script>
+  </body>
+</html>
+

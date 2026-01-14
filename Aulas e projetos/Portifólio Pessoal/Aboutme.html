@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="aboutme.css?v=1" />
+    <title>Sobre mim</title>
+    <meta
+      name="description"
+      content="Sobre Rhudan Moura. Desenvolvedor Front-end, back-end e UI-UX-Design. Crio sites responsivos e atrativos para pequenas e grandes empresas."
+    />
+    <meta
+      name="keywords"
+      content="Rhudan Moura, Desenvolvedor, Front-end, Back-end, UI-UX-Design, Portifólio, Responsivo, Pequenas empresas, Grandes empresas."
+    />
+    <meta name="Author" content="Rhudan Moura" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-primary">
+      <div class="container-fluid">
+        <div
+          class="position-absolute start-50 translate-middle-x text-center text-white d-none d-lg-block"
+        >
+          <h4 class="mb-0">RHUDAN MOURA</h4>
+          <strong class="text-light">Portfólio</strong>
+        </div>
+
+        <!-- Botões à direita -->
+        <div class="d-flex align-items-start">
+          <a href="login.php" class="login btn btn-primary text-white me-2"
+            >Login</a
+          >
+          <a
+            href="register.php"
+            class="register btn btn-primary text-white me-2"
+            >Register</a
+          >
+          <a href="admin.php" class="adminBtn btn btn-primary text-white"
+            >Admin</a
+          >
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Aboutme.html">Sobre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Trabalhos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="formulario.html"
+                      >Simulação</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contactme.html">Contactos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-3 textabout">
+        <h3>Sobre Mim</h3>
+      </div>
+      <hr />
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Dados e contactos
+            </button>
+          </h2>
+
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+          >
+            <div class="accordion-body">
+              <p>
+                Nome Completo: Jane Doe <br />
+                Endereço: Rua das Flores, 123, Lisboa, Portugal <br />
+                Telefone: +351 912 345 678 <br />
+                E-mail:janedoe@gmail.com <br />
+                Linkedin: linkedin.com/in/janedoe <br />
+                GitHub: github.com/janedoe
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Perfil Profissional
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis,
+                sint obcaecati, fugit illum non error perspiciatis nulla placeat
+                consequuntur, nostrum voluptas velit aliquid quas nihil vero.
+                Perferendis ipsum dolorum aliquam?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Experiência de trabalho
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi,
+                esse. Eveniet harum pariatur laborum aliquid minus recusandae,
+                commodi sunt ab! Architecto vel, tempora earum accusamus soluta
+                fugiat repellendus ullam delectus!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              Habilidades técnicas
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+                laudantium perferendis aliquid placeat consequatur iusto, vero
+                eaque hic blanditiis, molestias, voluptas veritatis animi
+                exercitationem magnam facilis quasi illum qui officia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              Educação
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              consectetur doloribus! Nobis totam, sunt tempora odio optio minus
+              amet alias repellat corporis. Cum iste dolores repudiandae tempore
+              id earum eligendi?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+            >
+              Projetos
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              fuga, rem illum ea blanditiis esse necessitatibus voluptate
+              reprehenderit totam animi quas aliquam rerum repudiandae
+              voluptatem placeat eius praesentium est cupiditate.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              Certificações
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeven"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+              eos alias ipsa aspernatur saepe suscipit at numquam ex fugiat
+              voluptatibus dolores repudiandae consequatur possimus cumque vel
+              aut, cupiditate minima tempore.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight"
+            >
+              Idiomas
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEight"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Português - Nativo <br />
+                Inglês - Intermediário <br />
+                Espanhol - Básico
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNine"
+            >
+              Interesses
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseNine"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+                assumenda odit asperiores deleniti doloribus maxime ad numquam
+                aperiam, voluptatum incidunt fugiat labore accusamus maiores et
+                aliquam veritatis nostrum ducimus minima.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTen"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTen"
+            >
+              Referências
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTen"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, illo nostrum eum fugit nam nemo nulla eligendi
+              doloribus ea! Sequi a distinctio nulla molestiae illo reiciendis
+              impedit esse non corporis?
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h3>Vamos conversar</h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm-4 clients mt-3 text-center">
+          <h3>Envie uma mensagem</h3>
+          <p>Entre em contacto através do meu e-mail ou pelas redes sociais.</p>
+        </div>
+        <div class="col-sm-4 clients mt-3 text-center">
+          <h3>Agende uma reunião</h3>
+          <p>Marque uma reunião para discutir seu projeto em detalhes.</p>
+        </div>
+        <div class="col-sm-4 clients mt-3 text-center">
+          <h3>Conecte-se comigo</h3>
+          <p>Siga-me nas redes sociais para acompanha minhas novidades.</p>
+        </div>
+      </div>
+      <div class="contact-me text-center">
+        <a href="mailto:joedoe@gmail.com">
+          <button class="btn btn-primary mt-5 mb-5" type="button">
+            Entre em contacto
+          </button>
+        </a>
+      </div>
+    </div>
+    <footer class="footer text-black py-3">
+      <div class="container text-center">
+        <p>
+          &copy; Rhudan Moura 2025 | Web Developer |
+          <a href="politica-privacidade.html" class="textfooter"
+            >Política de Privacidade</a
+          >
+        </p>
+        <div class="footer1">
+          <div class="footerlinks">
+            <a href="mailto:seuemail@dominio.com" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a
+              href="https://facebook.com/seuperfil"
+              target="_blank"
+              title="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a
+              href="https://instagram.com/seuperfil"
+              target="_blank"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footerlinks">
+            <a href="tel:+123456789" title="Telefone">
+              <i class="fas fa-phone" id="phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

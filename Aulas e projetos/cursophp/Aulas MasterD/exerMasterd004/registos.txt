@@ -1,0 +1,1 @@
+IP: 127.0.0.1 | Porta: 62242 | Data e Hora: 2025-07-16 19:52:36 | URL: /cursophp/exerMasterd004/registo.php

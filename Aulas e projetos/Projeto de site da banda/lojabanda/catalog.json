@@ -1,0 +1,24 @@
+{
+  "categories": [
+    { "id": "cds", "name": "CDs" },
+    { "id": "merch", "name": "Merchandise" }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Album X",
+      "description": "Album X - Primeiro Álbum do Ed Sheeran.",
+      "price": "15.99",
+      "category": "cds",
+      "image": "albumX.jpg"
+    },
+    {
+      "id": "2",
+      "name": "T-Shirt",
+      "description": "T-shirt oficial da banda",
+      "price": "25.99",
+      "category": "merch",
+      "image": "img/tshirt.jpg"
+    }
+  ]
+}

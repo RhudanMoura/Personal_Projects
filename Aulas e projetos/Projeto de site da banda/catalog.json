@@ -1,0 +1,56 @@
+{
+  "categories": [
+    { "id": "cds", "name": "CDs" },
+    { "id": "merch", "name": "Merchandise" }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Album X",
+      "description": "Album X - Primeiro Álbum do Ed Sheeran.",
+      "price": "15.99",
+      "category": "cds",
+      "image": "Imagens/albumX.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Album +",
+      "description": "Album X - Segundo Álbum do Ed Sheeran.",
+      "price": "16.99",
+      "category": "cds",
+      "image": "Imagens/+EdSheeran.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Album Divide",
+      "description": "Album Divide - Terceiro Álbum do Ed Sheeran.",
+      "price": "18.90",
+      "category": "cds",
+      "image": "Imagens/DivideAlbum.jpg"
+    },
+    {
+      "id": "4",
+      "name": "T-Shirt Divide",
+      "description": "T-Shirt do Album Divide.",
+      "price": "30.90",
+      "category": "merch",
+      "image": "Imagens T-shirt/T-shirt1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "T-Shirt Especial",
+      "description": "Edição Especial de todos os Álbuns",
+      "price": "39.90",
+      "category": "merch",
+      "image": "Imagens T-shirt/T-shirt2.jpg"
+    },
+    {
+      "id": "6",
+      "name": "T-Shirt Simples",
+      "description": "T-Shirt simples Ed Sheeran",
+      "price": "20.99",
+      "category": "merch",
+      "image": "Imagens T-shirt/T-shirt3.jpg"
+    }
+  ]
+}

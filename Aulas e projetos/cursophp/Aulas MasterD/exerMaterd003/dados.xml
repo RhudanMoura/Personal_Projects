@@ -1,0 +1,17 @@
+<escola>
+   <aluno>
+        <nome>Fernando Mendes</nome>
+        <idade>20 anos</idade>
+        <curso>web design</curso>
+   </aluno>
+   <aluno>
+        <nome>Guilherme Alves</nome>
+        <idade>32 anos</idade>
+        <curso>web design</curso>
+   </aluno>
+   <aluno>
+        <nome>Rita Santos</nome>
+        <idade>25 anos</idade>
+        <curso>web design</curso>
+   </aluno>
+</escola>
